@@ -18,22 +18,17 @@
        01 INPUT-LINE PIC X(100).
        01 NUM PIC 9(5).
 
-       01 TODAY PIC 99/99/9999.
-       01 TODAY-R REDEFINES TODAY.
-               05 TODAY-MONTH PIC 99.
-               05 FILLER PIC X.
-               05 TODAY-DAY PIC 99.
-               05 FILLER PIC X.
-               05 TODAY-YEAR PIC 9999.
+       01 BLOCKS.
+               05 BLOCKS-NUMBER PIC X(100).
+               05 BLOCKS-VERSION PIC 9(10).
+               05 BLOCKS-HASH PIC 9(10).
+                       
+
+        PROCEDURE DIVISION.
 
 
+        MAIN.
 
-       PROCEDURE DIVISION.
-
-       MAIN.
-
-           MOVE 05122020 TO TODAY
-           DISPLAY TODAY-day DISPLAY TODAY-MONTH DISPLAY TODAY-YEAR.
 
            PERFORM UNTIL 1 = 0
                 DISPLAY "ENTER LINES:  " ACCEPT INPUT-LINE
@@ -47,10 +42,7 @@
 
                
                
-                IF INPUT-LINE = "EXIT"
-                   STOP RUN
-                END-IF
-             END-PERFORM.
+           END-PERFORM.
            
        THE-END.
            DISPLAY "FINISH"
