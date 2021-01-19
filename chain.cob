@@ -32,22 +32,7 @@
        01 BLOCKSHASH.
                05 BLOCKHASH-NUM PIC X(100).
 
-       SCREEN SECTION.
        
-       01 DATA-ENTRY-SCREEN.
-          05 VALUE "DATA-ENTRY SCREEN" BLANK SCREEN LINE 1 COL 35.
-          05  VALUE "DATA ENTRY SCREEN" BLANK SCREEN     LINE 1 COL 35.
-          05  VALUE "ID #"                               LINE 3 COL 10.
-          05   ID-INPUT                                  LINE 3 COL 25
-                    PIC  X(4)     TO ID-IN-WS.
-          05  VALUE "NAME"                               LINE 5 COL 10.
-          05  NAME-INPUT                                 LINE 5 COL 25
-                    PIC X(20)     TO NAME-IN-WS.
-          05  VALUE "C - TO CONTINUE"                    LINE 11 COL 30.
-          05  VALUE "Q - TO QUIT"                        LINE 12 COL 30.
-          05  VALUE "ENTER RESPONSE"                     LINE 14 COL 30.
-          05  RESPONSE-INPUT                             LINE 14 COL 45
-                   PIC X         TO RESPONSE-IN-WS.
 
 
 
