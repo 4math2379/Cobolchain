@@ -12,3 +12,8 @@ https://open-cobol.sourceforge.io/guides/GnuCOBOL%202.2%20NOV2017%20Programmers%
 
 2. screens section 
 http://www.pgrocer.net/Cis12/scrnotes.html
+
+
+
+3. FIller 
+https://www.ibm.com/docs/en/rpp/9.6.1?topic=tab-filler-definition
